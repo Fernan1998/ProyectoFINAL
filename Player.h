@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "Animation.h"
 #pragma once
 #include <iostream>
 
@@ -9,7 +10,7 @@ public:
 	Player();
 	~Player();
 	void cmd();
-	void update();
+	void update(float deltaTime);
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 	sf::Vector2f getPosition();
 	sf::RectangleShape getBody()
@@ -74,6 +75,7 @@ private:
 	bool _jump;
 	bool _colisionIzq;
 	bool _colisionDer;
-	
+
+	Animation animacion;
 };
 

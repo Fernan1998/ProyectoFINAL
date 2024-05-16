@@ -3,6 +3,7 @@
 #include "Mapa.h"
 #include "Player.h"
 #include "System.h"
+#include "Animation.h"
 #include <fstream>
 
 using namespace sf;
@@ -44,8 +45,14 @@ int main(int argc, char *argv[]){
 	dead.MapCreator(file_dead);
 	
 	System sistema(player, mainCamera, map, fondo, obstacle, dead, nFila, nColumna, file_map);
+	
 
+	sf::Clock clock;
+	
 	while(w.isOpen()) {
+		
+		float deltaTime = clock.restart().asSeconds();
+		
 		Event e;
 		while(w.pollEvent(e)) {
 			if(e.type == Event::Closed)
@@ -61,7 +68,7 @@ int main(int argc, char *argv[]){
 		w.clear();
 		sistema.CheckCollision();
 		sistema.cmd();
-		sistema.update();
+		sistema.update(deltaTime);
 		sistema.draw(w);
 
 

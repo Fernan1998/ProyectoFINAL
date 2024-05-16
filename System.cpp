@@ -21,9 +21,9 @@ System::~System()
 {
 	
 }
-void System::update()
+void System::update(float deltaTime)
 {	
-	_player.update();
+	_player.update(deltaTime);
 	_mainCamera.FollowAndUpdate(_player.getPosition(), &_mainCamera);
 
 }

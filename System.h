@@ -11,7 +11,7 @@ public:
 	
 	System(Player& player, Camera &camara, Mapa& mapa, Mapa& fondo, Mapa& obstacle, Mapa& dead, int anchoMapa, int altoMapa, std::ifstream& fileMap);
 	~System();
-	void update();
+	void update(float deltaTime);
 	void cmd();
 	void draw(sf::RenderWindow& window);
 	void CheckCollision();

@@ -1,9 +1,11 @@
 #include "Player.h"
+#include "Animation.h"
 #include <iostream>
 
 Player::Player(float _speed)
+	: animacion(&_texture, sf::Vector2u(4,1), 0.3f)
 {
-	_texture.loadFromFile("Textura/Player/character1.png");
+	_texture.loadFromFile("Textura/Player/BENJAMIN.png");
 	_body.setTexture(&_texture);
 	_body.setSize(sf::Vector2f(42.0f, 87.0f));
 	_body.setPosition(0, 0);
@@ -15,10 +17,11 @@ Player::Player(float _speed)
 	_jump = false;	
 	_colisionIzq = false;
 	_colisionDer = false;
+	Animation animacion(&_texture, sf::Vector2u(63,128), 0.3f);
 }
 Player::Player()
+	: animacion(&_texture, sf::Vector2u(63, 128), 0.3f)
 {
-	
 }
 Player::~Player()
 {
@@ -30,6 +33,8 @@ sf::Vector2f Player::getPosition()
 }
 void Player::cmd()
 {
+
+	
 	if(_estado == ESTADOS::QUIETO && !_colisionDer || _estado == ESTADOS::CAYENDO && !_colisionDer || _estado == ESTADOS::CAMINANDO_ADELANTE && !_colisionDer)
 	{
 		if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
@@ -80,9 +85,9 @@ void Player::cmd()
 		
 }
 
-void Player::update()
-{
-	
+void Player::update(float deltaTime)
+{	
+
 		switch(_estado)
 		{
 			case QUIETO:
@@ -124,7 +129,9 @@ void Player::update()
 //			case ATACANDO:
 //			_body.move(0, -_jumpVelocity);
 //			_estado = ESTADOS::CAYENDO;
-//			break;
+//		
+				animacion.Update(1, deltaTime);
+				_body.setTextureRect(animacion.uvRect);	break;
 		}
 	std::cout << _jumpVelocity << std::endl;
 	_jumpVelocity-=0.5;
