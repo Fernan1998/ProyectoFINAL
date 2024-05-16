@@ -1,0 +1,62 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.json": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1310.6060606060605,
+                "y": 830.3030303030304
+            }
+        },
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.tmj": {
+            "scale": 0.25,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 892,
+                "y": 36
+            }
+        },
+        "CUEVA.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 2,
+            "scaleInEditor": 3
+        },
+        "MAPA.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TIERRA.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        }
+    },
+    "last.imagePath": "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Textura/Mapa",
+    "map.height": 5,
+    "map.lastUsedFormat": "json",
+    "map.width": 10,
+    "openFiles": [
+        "CUEVA.tsx",
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.json",
+        "TIERRA.tsx"
+    ],
+    "project": "Mapa.tiled-project",
+    "recentFiles": [
+        "CUEVA.tsx",
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.json",
+        "TIERRA.tsx",
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.tmj",
+        "MAPA.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}

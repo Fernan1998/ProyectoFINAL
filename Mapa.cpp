@@ -23,19 +23,19 @@ Mapa::Mapa(int _filas, int _columnas)
 		case 0:
 			break;
 		case 1:
-			_texture[i].loadFromFile("Textura/Mapa/pared_fondo.png");
+			_texture[i].loadFromFile("Textura/Mapa/grass.png");
 			break;
 		case 2:
-			_texture[i].loadFromFile("Textura/Mapa/suelo.png");
+			_texture[i].loadFromFile("Textura/Mapa/grass_derecha.png");
 			break;
 		case 3:
-			_texture[i].loadFromFile("Textura/Mapa/suelo_der.png");
+			_texture[i].loadFromFile("Textura/Mapa/grass_izquierda.png");
 			break;
 		case 4:
-			_texture[i].loadFromFile("Textura/Mapa/suelo_izq.png");
+			_texture[i].loadFromFile("Textura/Mapa/grass1.png");
 			break;
 		case 5:
-			_texture[i].loadFromFile("Textura/Mapa/pared_der.png");
+			_texture[i].loadFromFile("Textura/Mapa/fondo.png");
 			break;
 		case 6:
 			_texture[i].loadFromFile("Textura/Mapa/pared_izq.png");

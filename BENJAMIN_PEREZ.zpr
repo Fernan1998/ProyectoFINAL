@@ -19,11 +19,11 @@ current_source=main.cpp
 path_char=\
 [source]
 path=main.cpp
-cursor=12:12
+cursor=42:46
 open=true
 [source]
 path=Mapa.cpp
-cursor=123:10
+cursor=37:51
 open=true
 [source]
 path=Player.cpp
