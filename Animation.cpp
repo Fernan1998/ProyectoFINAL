@@ -7,8 +7,8 @@ Animation::Animation(sf::Texture* textura, sf::Vector2u imageCount, float switch
 	totalTime=0.0f;
 	imagenActual.x = 0;
 	
-	uvRect.width = textura->getSize().x/imageCount.x;
-	uvRect.height = textura->getSize().y/imageCount.y;
+	uvRect.width = 63;
+	uvRect.height = 128;
 }
 
 void Animation::Update(int columna, float deltaTime)

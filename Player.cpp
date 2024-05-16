@@ -17,7 +17,7 @@ Player::Player(float _speed)
 	_jump = false;	
 	_colisionIzq = false;
 	_colisionDer = false;
-	Animation animacion(&_texture, sf::Vector2u(63,128), 0.3f);
+
 }
 Player::Player()
 	: animacion(&_texture, sf::Vector2u(63, 128), 0.3f)
@@ -99,12 +99,16 @@ void Player::update(float deltaTime)
 				_body.move(_velocity.x, -_jumpVelocity);
 				_estado= ESTADOS::CAYENDO;
 				std::cout << "CAMINANDO ADELANTE\n";
+				animacion.Update(0, deltaTime);
+				_body.setTextureRect(animacion.uvRect);	break;
 				break;
 			case CAMINANDO_ATRAS:
 				_body.setScale(-1,1);
 				_body.move(_velocity.x, -_jumpVelocity);
 				_estado= ESTADOS::CAYENDO;
 				std::cout << "CAMINANDO ATRAS\n";
+				animacion.Update(0, deltaTime);
+				_body.setTextureRect(animacion.uvRect);	break;
 				break;
 			case SALTANDO:
 				_body.move(0, -_jumpVelocity);
@@ -130,8 +134,7 @@ void Player::update(float deltaTime)
 //			_body.move(0, -_jumpVelocity);
 //			_estado = ESTADOS::CAYENDO;
 //		
-				animacion.Update(1, deltaTime);
-				_body.setTextureRect(animacion.uvRect);	break;
+				
 		}
 	std::cout << _jumpVelocity << std::endl;
 	_jumpVelocity-=0.5;

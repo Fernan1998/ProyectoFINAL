@@ -15,7 +15,7 @@ tab_width=4
 tab_use_spaces=0
 explorer_path=.
 inherits_from=
-current_source=main.cpp
+current_source=Player.cpp
 path_char=\
 [source]
 path=main.cpp
@@ -27,7 +27,7 @@ cursor=37:51
 open=true
 [source]
 path=Player.cpp
-cursor=67:3
+cursor=19:0
 open=true
 [source]
 path=System.cpp
@@ -36,7 +36,7 @@ marker=92
 open=true
 [source]
 path=Animation.cpp
-cursor=4:1
+cursor=10:21
 open=true
 [source]
 path=camera.cpp
