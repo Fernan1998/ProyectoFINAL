@@ -23,37 +23,37 @@ Mapa::Mapa(int _filas, int _columnas)
 		case 0:
 			break;
 		case 1:
-			_texture[i].loadFromFile("Textura/Mapa/grass.png");
+			_texture[i].loadFromFile("Textura/Mapa/pared_fondo.png");
 			break;
 		case 2:
-			_texture[i].loadFromFile("Textura/Mapa/grass_derecha.png");
+			_texture[i].loadFromFile("Textura/Mapa/pared_der.png");
 			break;
 		case 3:
-			_texture[i].loadFromFile("Textura/Mapa/grass_izquierda.png");
+			_texture[i].loadFromFile("Textura/Mapa/pared_fondo.png");
 			break;
 		case 4:
-			_texture[i].loadFromFile("Textura/Mapa/grass1.png");
-			break;
-		case 5:
-			_texture[i].loadFromFile("Textura/Mapa/fondo.png");
-			break;
-		case 6:
 			_texture[i].loadFromFile("Textura/Mapa/pared_izq.png");
 			break;
+		case 5:
+			_texture[i].loadFromFile("Textura/Mapa/suelo.png");
+			break;
+		case 6:
+			_texture[i].loadFromFile("Textura/Mapa/suelo_der.png");
+			break;
 		case 7:
-			_texture[i].loadFromFile("Textura/Mapa/fondo.png");
+			_texture[i].loadFromFile("Textura/Mapa/suelo_izq.png");
 			break;
 		case 8:
-			_texture[i].loadFromFile("Textura/Mapa/piedra_3.png");
+			_texture[i].loadFromFile("Textura/Mapa/techo.png");
 			break;
 		case 9:
-			_texture[i].loadFromFile("Textura/Mapa/piedra_2.png");
+			_texture[i].loadFromFile("Textura/Mapa/techo_der.png");
 			break;
 		case 10:
 			_texture[i].loadFromFile("Textura/Mapa/techo.png");
 			break;
 		case 11:
-			_texture[i].loadFromFile("Textura/Mapa/techo_der.png");
+			_texture[i].loadFromFile("Textura/Mapa/piedritas.png");
 			break;
 		case 12:
 			_texture[i].loadFromFile("Textura/Mapa/techo_izq.png");
