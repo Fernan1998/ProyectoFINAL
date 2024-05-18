@@ -41,21 +41,20 @@
         }
     },
     "last.imagePath": "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Textura/Mapa",
-    "map.height": 5,
+    "map.height": 50,
     "map.lastUsedFormat": "json",
-    "map.width": 10,
+    "map.tileHeight": 32,
+    "map.tileWidth": 32,
+    "map.width": 50,
     "openFiles": [
-        "CUEVA.tsx",
-        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.json",
-        "TIERRA.tsx"
     ],
     "project": "Mapa.tiled-project",
     "recentFiles": [
+        "MAPA.tsx",
+        "TIERRA.tsx",
         "CUEVA.tsx",
         "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.json",
-        "TIERRA.tsx",
-        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.tmj",
-        "MAPA.tsx"
+        "C:/Users/Fernan/OneDrive/Escritorio/BENJAMIN_PEREZ/Mapas/mapa_luz_mala.tmj"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.type": 1

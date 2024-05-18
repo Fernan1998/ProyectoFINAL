@@ -15,11 +15,11 @@ tab_width=4
 tab_use_spaces=0
 explorer_path=.
 inherits_from=
-current_source=Player.cpp
+current_source=Camera.h
 path_char=\
 [source]
 path=main.cpp
-cursor=28:36
+cursor=23:20
 open=true
 [source]
 path=Mapa.cpp
@@ -27,7 +27,7 @@ cursor=37:51
 open=true
 [source]
 path=Player.cpp
-cursor=19:0
+cursor=13:18
 open=true
 [source]
 path=System.cpp
